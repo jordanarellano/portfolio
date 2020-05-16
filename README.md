@@ -6,7 +6,7 @@ Implementation of Luhn's algorithm using C to determine validity of a credit car
 
 # Degrees:
 
-Implementation of a search algorithm in python, as part of Harvard 50: Introduction to Artificial Intelligence
+Implementation of a search algorithm in Python, as part of Harvard 50: Introduction to Artificial Intelligence
 
 # DNA:
 
@@ -14,7 +14,7 @@ Implementation of a program in Python that identifies a target person based on t
 
 # Filter:
 
-Implementation of a program that applies image filters to BMP images, as part of Harvard CS50x
+Implementation of a program in C that applies image filters to BMP images, as part of Harvard CS50x
 
 # Finance:
 
@@ -28,7 +28,7 @@ Implementation of a program using Python & SQL to produce rosters of Harry Potte
 
 # Knights:
 
-Updates a knowledge base using python in order to solve logic puzzles, as part of Harvard 50: Introduction to Artificial Intelligence
+Updates a knowledge base using Python in order to solve logic puzzles, as part of Harvard 50: Introduction to Artificial Intelligence
 
 # Runoff:
 
@@ -40,4 +40,4 @@ Implementation of a substitution cipher using C, as part of Harvard CS50x
 
 # Tictactoe:
 
-Implementation of a Minimax Algorithm in python in order to play Tictactoe vs. an AI, as part of Harvard 50: Introduction to Artificial Intelligence
+Implementation of a Minimax Algorithm in Python in order to play Tictactoe vs. an AI, as part of Harvard 50: Introduction to Artificial Intelligence
