@@ -1,1 +1,1 @@
-Search algorithm written in python, as part of Harvard 50: Introduction to Artificial Intelligence
+Implementation of a search algorithm in python, as part of Harvard 50: Introduction to Artificial Intelligence
