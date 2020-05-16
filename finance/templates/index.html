@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Symbol</th>
+          <th scope="col">Name</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price</th>
+          <th scope="col">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {% for row in rows %}
+        <tr>
+            <td>{{ row["symbol"] }}</td>
+            <td>{{ row["name"] }}</td>
+            <td>{{ row["shares"] }}</td>
+            <td>{{ row["price"] }}</td>
+            <td>{{ row["total"] }}</td>
+
+        </tr>
+        {% endfor %}
+        <tr>
+            <td>CASH</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>{{ cash }}</td>
+       </tr>
+
+       <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>{{ total }}</td>
+       </tr>
+      </tbody>
+    </table>
+
+    <form action="/buy" method="post" style="padding: 25px 25px 25px 25px">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Stock Symbol" type="text">
+        </div>
+
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" min="1" name="shares" placeholder="Number of shares" type="number">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Buy Stocks</button>
+    </form>
+
+     <form action="/sell" method="post" style="padding: 25px 25px 25px 25px">
+
+        <select name="symbol" placeholder = "Symbol" style = "padding: 0px 0px 0px 10px">
+
+            {% for row in rows %}
+
+            <option>{{ row["symbol"] }} </option>
+
+            {% endfor %}
+        </select>
+
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" min="1" name="shares" placeholder="Number of shares" type="number">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Sell Stocks</button>
+    </form>
+{% endblock %}
+
+
