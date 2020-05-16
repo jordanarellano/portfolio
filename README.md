@@ -1,4 +1,4 @@
-# Portfolio - A few of my showcase projects, updated periodically -
+# Portfolio - A few of my showcase projects, updated periodically 
 
 # Credit:
 
