@@ -1,0 +1,14 @@
+<p>
+  <strong> <%= comment.commenter %>: </strong>
+</p>
+
+<p>
+
+  <%= comment.body %>
+</p>
+
+<p>
+  <%= link_to 'Delete', [comment.article, comment],
+              method: :delete,
+              data: { confirm: 'Are you sure?'} %>
+</p>
